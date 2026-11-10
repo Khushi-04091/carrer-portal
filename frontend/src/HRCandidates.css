@@ -1,0 +1,425 @@
+
+.hr-candidates-page {
+  min-height: 85vh;
+  padding: 35px;
+  background: #faf8f5;
+}
+
+.hr-candidates-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.hr-candidates-label {
+  color: #a6532e;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hr-candidates-header h1 {
+  color: #302820;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.hr-candidates-header p {
+  color: #81766c;
+}
+
+.hr-back-button,
+.hr-filter-button,
+.hr-clear-button,
+.hr-view-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.hr-back-button {
+  border: 1px solid #a6532e;
+  color: #a6532e;
+  background: white;
+}
+
+.hr-candidate-summary {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 22px;
+  margin-bottom: 24px;
+  border: 1px solid #eadfd5;
+  border-radius: 10px;
+  background: white;
+  color: #a6532e;
+}
+
+.hr-candidate-summary h2 {
+  margin: 0;
+  font-size: 25px;
+  color: #302820;
+}
+
+.hr-candidate-summary p {
+  margin: 5px 0 0;
+  color: #81766c;
+  font-size: 14px;
+}
+
+.hr-candidate-filters {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(140px, 1fr));
+  gap: 18px;
+  align-items: end;
+  background: white;
+  border: 1px solid #eadfd5;
+  border-radius: 10px;
+  padding: 22px;
+  margin-bottom: 25px;
+}
+
+.hr-filter-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #51463c;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.hr-filter-field input,
+.hr-filter-field select {
+  width: 100%;
+  height: 43px;
+  padding: 0 11px;
+  border: 1px solid #ded4ca;
+  border-radius: 6px;
+  outline: none;
+  color: #302820;
+  background: white;
+  font-size: 13px;
+}
+
+.hr-filter-field input:focus,
+.hr-filter-field select:focus {
+  border-color: #a6532e;
+}
+
+.hr-search-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 10px;
+  border: 1px solid #ded4ca;
+  border-radius: 6px;
+  color: #a6532e;
+}
+
+.hr-search-input input {
+  border: none;
+}
+
+.hr-filter-actions {
+  display: flex;
+  gap: 8px;
+  grid-column: 1 / -1;
+}
+
+.hr-filter-button {
+  background: #a6532e;
+  border: 1px solid #a6532e;
+  color: white;
+}
+
+.hr-clear-button {
+  background: white;
+  border: 1px solid #ded4ca;
+  color: #51463c;
+}
+
+.hr-candidate-table-container {
+  background: white;
+  border: 1px solid #eadfd5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hr-table-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 22px;
+  border-bottom: 1px solid #eee5dd;
+}
+
+.hr-table-heading h2 {
+  color: #302820;
+  font-size: 19px;
+  margin: 0;
+}
+
+.hr-table-heading span {
+  color: #81766c;
+  font-size: 13px;
+}
+
+.hr-table-scroll {
+  overflow-x: auto;
+}
+
+.hr-candidates-table {
+  width: 100%;
+  min-width: 1100px;
+  border-collapse: collapse;
+}
+
+.hr-candidates-table th,
+.hr-candidates-table td {
+  text-align: left;
+  padding: 15px 13px;
+  border-bottom: 1px solid #f0e9e3;
+  font-size: 13px;
+}
+
+.hr-candidates-table th {
+  background: #faf7f3;
+  color: #51463c;
+  font-weight: 700;
+}
+
+.hr-candidates-table td {
+  color: #62564c;
+}
+
+.hr-status {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.hr-status.completed {
+  background: #e7f5eb;
+  color: #237a3b;
+}
+
+.hr-status.in-progress {
+  background: #fff3df;
+  color: #986313;
+}
+
+.hr-view-button {
+  padding: 8px 11px;
+  border: none;
+  background: #f8e9df;
+  color: #a6532e;
+  font-size: 12px;
+}
+
+.hr-candidate-message,
+.hr-candidate-error {
+  padding: 25px;
+  text-align: center;
+  color: #81766c;
+}
+
+.hr-candidate-error {
+  color: #b42318;
+}
+
+.hr-candidate-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(35, 28, 22, 0.6);
+}
+
+.hr-candidate-modal {
+  width: 100%;
+  max-width: 750px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 25px;
+  border-radius: 12px;
+  background: white;
+}
+
+.hr-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #eee5dd;
+}
+
+.hr-modal-header span {
+  color: #a6532e;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.hr-modal-header h2 {
+  margin: 7px 0 0;
+  color: #302820;
+}
+
+.hr-modal-close {
+  border: none;
+  background: transparent;
+  color: #51463c;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.hr-modal-section {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee5dd;
+}
+
+.hr-modal-section h3 {
+  color: #a6532e;
+  font-size: 16px;
+  margin: 0 0 13px;
+}
+
+.hr-modal-section p {
+  color: #62564c;
+  font-size: 13px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+  margin: 6px 0;
+}
+
+.hr-detail-item {
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 7px;
+  background: #faf7f3;
+}
+
+.hr-detail-item strong {
+  color: #302820;
+}
+
+@media (max-width: 900px) {
+  .hr-candidate-filters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .hr-candidates-page {
+    padding: 18px;
+  }
+
+  .hr-candidates-header {
+    align-items: flex-start;
+  }
+
+  .hr-candidates-header h1 {
+    font-size: 23px;
+  }
+
+  .hr-candidate-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .hr-filter-actions {
+    flex-wrap: wrap;
+  }
+
+  .hr-candidate-modal {
+    padding: 17px;
+  }
+}
+
+/* Resume Section */
+
+.hr-resume-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  padding: 14px;
+  background: #fdf6f1;
+  border: 1px solid #ead9ce;
+  border-radius: 8px;
+  color: #a65332;
+}
+
+.hr-resume-info strong {
+  display: block;
+  color: #333;
+  font-size: 14px;
+}
+
+.hr-resume-info p {
+  margin: 4px 0 0;
+  color: #777;
+  font-size: 13px;
+}
+
+.hr-resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.hr-resume-view-button,
+.hr-resume-download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 18px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.hr-resume-view-button {
+  background: #fff;
+  color: #a65332;
+  border: 1px solid #a65332;
+}
+
+.hr-resume-view-button:hover {
+  background: #fff3ed;
+}
+
+.hr-resume-download-button {
+  background: #a65332;
+  color: #fff;
+  border: 1px solid #a65332;
+}
+
+.hr-resume-download-button:hover {
+  background: #874128;
+}
+
+.hr-resume-view-button:disabled,
+.hr-resume-download-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.hr-resume-missing {
+  color: #b42318;
+  font-size: 14px;
+  margin-top: 12px;
+}

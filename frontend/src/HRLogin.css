@@ -1,0 +1,155 @@
+
+.hr-login-page {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 16px;
+  background: #faf7f3;
+}
+
+.hr-login-card {
+  width: 100%;
+  max-width: 460px;
+  padding: 38px;
+  background: #fff;
+  border: 1px solid #eadfd5;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(60, 40, 20, 0.07);
+}
+
+.hr-login-brand {
+  text-align: center;
+  color: #a94f2b;
+  margin-bottom: 32px;
+}
+
+.hr-login-brand h2 {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.hr-login-brand span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.hr-login-heading {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.hr-login-icon {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8e9df;
+  color: #a94f2b;
+  border-radius: 50%;
+}
+
+.hr-login-heading h1 {
+  font-size: 25px;
+  margin: 0 0 9px;
+  color: #302820;
+}
+
+.hr-login-heading p {
+  color: #81766c;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.hr-login-field {
+  margin-bottom: 20px;
+}
+
+.hr-login-field label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a4038;
+}
+
+.hr-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ded4ca;
+  border-radius: 7px;
+  padding: 0 13px;
+  color: #a6532e;
+}
+
+.hr-input-wrapper:focus-within {
+  border-color: #a6532e;
+}
+
+.hr-input-wrapper input {
+  flex: 1;
+  min-width: 0;
+  height: 46px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+  color: #302820;
+}
+
+.hr-password-toggle {
+  border: none;
+  background: transparent;
+  color: #81766c;
+  cursor: pointer;
+  display: flex;
+}
+
+.hr-login-button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  background: #a6532e;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hr-login-button:hover {
+  background: #874324;
+}
+
+.hr-login-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.hr-login-error {
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  background: #fff0ed;
+  color: #b42318;
+  font-size: 14px;
+}
+
+.hr-login-footer {
+  margin-top: 25px;
+  text-align: center;
+  color: #81766c;
+  font-size: 12px;
+}
+
+@media (max-width: 500px) {
+  .hr-login-card {
+    padding: 25px 20px;
+  }
+}

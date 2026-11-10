@@ -1,0 +1,422 @@
+
+.experience-page {
+  min-height: 100vh;
+  background: #faf8f5;
+  padding: 45px 6%;
+  color: #302d2a;
+}
+
+.experience-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.experience-eyebrow {
+  color: #b66a38;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.experience-header h1 {
+  font-size: 34px;
+  margin: 12px 0;
+}
+
+.experience-header p,
+.experience-section-heading p,
+.experience-records-header p {
+  color: #77716b;
+  font-size: 14px;
+}
+
+.experience-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 35px auto;
+  max-width: 950px;
+}
+
+.experience-progress-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.experience-progress-item:last-child {
+  flex: 0;
+}
+
+.experience-progress-step {
+  text-align: center;
+  min-width: 65px;
+}
+
+.experience-progress-step span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e8e3dc;
+  color: #777;
+  font-weight: 600;
+}
+
+.experience-progress-step.completed span,
+.experience-progress-step.active span {
+  background: #a95f32;
+  color: white;
+}
+
+.experience-progress-step p {
+  font-size: 11px;
+  margin-top: 8px;
+  white-space: nowrap;
+}
+
+.experience-progress-line {
+  flex: 1;
+  height: 2px;
+  background: #ddd5cb;
+  margin: 0 5px;
+  min-width: 15px;
+}
+
+.experience-form-card {
+  max-width: 1000px;
+  margin: auto;
+  padding: 35px;
+  background: white;
+  border: 1px solid #eee8e0;
+  border-radius: 14px;
+  box-shadow: 0 5px 25px rgba(50, 40, 25, 0.04);
+}
+
+.experience-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.experience-icon {
+  width: 48px;
+  height: 48px;
+  background: #f8eee5;
+  color: #a95f32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.experience-section-heading h2 {
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+
+.experience-type-section {
+  margin-bottom: 30px;
+}
+
+.experience-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.experience-type-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.experience-type-card {
+  text-align: left;
+  padding: 22px;
+  border: 1px solid #e6dfd6;
+  background: white;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.2s;
+  color: #302d2a;
+}
+
+.experience-type-card:hover {
+  border-color: #b66a38;
+}
+
+.experience-type-card.selected {
+  border: 2px solid #a95f32;
+  background: #fff9f4;
+}
+
+.experience-type-emoji {
+  font-size: 27px;
+}
+
+.experience-type-card strong {
+  font-size: 16px;
+}
+
+.experience-type-card small {
+  color: #77716b;
+  line-height: 1.6;
+}
+
+.fresher-message {
+  padding: 20px;
+  border-radius: 10px;
+  background: #f4f8f1;
+  border: 1px solid #dcebd4;
+  color: #42633b;
+  margin: 25px 0;
+}
+
+.fresher-message p {
+  font-size: 14px;
+  margin-top: 7px;
+}
+
+.experience-records {
+  margin-top: 35px;
+}
+
+.experience-records-header,
+.experience-record-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.experience-records-header {
+  margin-bottom: 20px;
+}
+
+.experience-records-header h3 {
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+
+.add-experience-button,
+.add-another-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #a95f32;
+  color: #a95f32;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.add-experience-button:hover,
+.add-another-bottom:hover {
+  background: #fff4eb;
+}
+
+.experience-record-card {
+  border: 1px solid #eee4d9;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 22px;
+  background: #fffefd;
+}
+
+.experience-record-title {
+  margin-bottom: 25px;
+}
+
+.experience-record-title h3 {
+  font-size: 17px;
+}
+
+.remove-experience-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background: transparent;
+  color: #c44747;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.experience-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.experience-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.experience-field label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.experience-field input,
+.experience-field select,
+.experience-field textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd6ce;
+  border-radius: 7px;
+  background: white;
+  font-size: 14px;
+  outline: none;
+  color: #302d2a;
+}
+
+.experience-field input:focus,
+.experience-field select:focus,
+.experience-field textarea:focus {
+  border-color: #b66a38;
+  box-shadow: 0 0 0 2px rgba(182, 106, 56, 0.1);
+}
+
+.experience-field input:disabled {
+  background: #f2f0ed;
+  cursor: not-allowed;
+}
+
+.currently-working-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 22px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.currently-working-checkbox input {
+  accent-color: #a95f32;
+  width: 16px;
+  height: 16px;
+}
+
+.experience-description {
+  margin-top: 10px;
+}
+
+.add-another-bottom {
+  width: 100%;
+  border-style: dashed;
+  margin-top: 15px;
+}
+
+.experience-message {
+  padding: 13px;
+  border-radius: 7px;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.experience-message.success {
+  background: #edf7ec;
+  color: #34723b;
+}
+
+.experience-message.error {
+  background: #fff0ed;
+  color: #b83b30;
+}
+
+.experience-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #eee8e0;
+}
+
+.experience-back-button,
+.experience-next-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 22px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.experience-back-button {
+  background: white;
+  border: 1px solid #d8d0c6;
+  color: #514b45;
+}
+
+.experience-next-button {
+  background: #a95f32;
+  color: white;
+  border: 1px solid #a95f32;
+}
+
+.experience-next-button:hover {
+  background: #8d4c27;
+}
+
+.experience-next-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.experience-loading {
+  text-align: center;
+  padding: 100px 20px;
+  color: #777;
+}
+
+@media (max-width: 700px) {
+  .experience-page {
+    padding: 30px 15px;
+  }
+
+  .experience-form-card {
+    padding: 20px;
+  }
+
+  .experience-header h1 {
+    font-size: 26px;
+  }
+
+  .experience-type-options,
+  .experience-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-progress-step {
+    min-width: 40px;
+  }
+
+  .experience-progress-step p {
+    font-size: 9px;
+  }
+
+  .experience-records-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .experience-record-card {
+    padding: 17px;
+  }
+}

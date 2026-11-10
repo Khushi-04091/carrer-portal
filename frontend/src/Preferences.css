@@ -1,0 +1,268 @@
+
+.preferences-page {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 45px 35px;
+  color: #29221e;
+}
+
+.preferences-header {
+  margin-bottom: 30px;
+}
+
+.preferences-eyebrow {
+  color: #ad5128;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.preferences-header h1 {
+  font-size: 30px;
+  margin: 12px 0 8px;
+}
+
+.preferences-header p,
+.preferences-section-heading p {
+  color: #82766e;
+  margin: 0;
+}
+
+.preferences-progress {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 35px 0;
+  gap: 8px;
+}
+
+.preferences-progress-item {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+  gap: 10px;
+}
+
+.preferences-progress-step {
+  text-align: center;
+  min-width: 65px;
+}
+
+.preferences-progress-step span {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  margin: auto;
+  border-radius: 50%;
+  background: #e9e4de;
+  color: #766b63;
+  font-weight: 700;
+}
+
+.preferences-progress-step.active span,
+.preferences-progress-step.completed span {
+  background: #ad5a2e;
+  color: white;
+}
+
+.preferences-progress-step p {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.preferences-progress-line {
+  height: 2px;
+  background: #e3d9cf;
+  flex: 1;
+  margin-top: 19px;
+}
+
+.preferences-form-card {
+  background: white;
+  border: 1px solid #eadfd6;
+  border-radius: 17px;
+  padding: 38px;
+  box-shadow: 0 8px 30px rgba(70, 40, 20, 0.04);
+}
+
+.preferences-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.preferences-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: #f8eee5;
+  color: #ad5a2e;
+}
+
+.preferences-section-heading h2 {
+  margin: 0 0 7px;
+  font-size: 23px;
+}
+
+.preferences-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.preferences-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.preferences-field label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.preferences-field input,
+.preferences-field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  border: 1px solid #dfd5cc;
+  border-radius: 9px;
+  background: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+.preferences-field input:focus,
+.preferences-field select:focus {
+  border-color: #ad5a2e;
+  box-shadow: 0 0 0 3px rgba(173, 90, 46, 0.1);
+}
+
+.preferences-relocation {
+  margin-top: 30px;
+  padding: 22px;
+  background: #faf7f3;
+  border: 1px solid #eadfd6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.preferences-relocation p {
+  color: #82766e;
+  margin: 7px 0 0;
+  font-size: 14px;
+}
+
+.preferences-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.preferences-toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: #ad5a2e;
+}
+
+.preferences-message {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 9px;
+}
+
+.preferences-message.success {
+  background: #edf7ed;
+  color: #24733b;
+}
+
+.preferences-message.error {
+  background: #fff0ed;
+  color: #b42318;
+}
+
+.preferences-actions {
+  border-top: 1px solid #eee4dc;
+  margin-top: 35px;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.preferences-back-button,
+.preferences-next-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 23px;
+  border-radius: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.preferences-back-button {
+  background: white;
+  border: 1px solid #dfcfc1;
+  color: #66422e;
+}
+
+.preferences-next-button {
+  background: #ad5128;
+  color: white;
+  border: none;
+}
+
+.preferences-next-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.preferences-loading {
+  padding: 60px;
+  text-align: center;
+  color: #82766e;
+}
+
+@media (max-width: 700px) {
+  .preferences-page {
+    padding: 25px 15px;
+  }
+
+  .preferences-form-card {
+    padding: 22px 16px;
+  }
+
+  .preferences-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .preferences-progress {
+    overflow-x: auto;
+  }
+
+  .preferences-progress-item {
+    min-width: 90px;
+  }
+
+  .preferences-relocation {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .preferences-section-heading h2 {
+    font-size: 19px;
+  }
+}

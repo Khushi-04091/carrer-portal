@@ -1,0 +1,284 @@
+
+.candidate-profile-page {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 45px 55px;
+  color: #33251e;
+}
+
+.profile-header {
+  margin-bottom: 35px;
+}
+
+.profile-eyebrow {
+  color: #b34d20;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.profile-header h1 {
+  font-size: 32px;
+  margin: 12px 0;
+  color: #35251d;
+}
+
+.profile-header p {
+  color: #82766e;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Progress */
+
+.profile-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.progress-step {
+  min-width: 65px;
+  text-align: center;
+  color: #a99c93;
+}
+
+.progress-step span {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee8e3;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.progress-step.active span {
+  background: #ad4b22;
+  color: white;
+}
+
+.progress-step p {
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.progress-step.active p {
+  color: #ad4b22;
+  font-weight: 700;
+}
+
+.progress-line {
+  height: 2px;
+  background: #e8ddd5;
+  min-width: 20px;
+  flex: 1;
+  margin: 0 7px 22px;
+}
+
+/* Main form */
+
+.profile-form-card {
+  background: #ffffff;
+  border: 1px solid #eee4dc;
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 5px 25px rgba(75, 45, 25, 0.04);
+}
+
+.profile-section-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee6df;
+}
+
+.profile-icon {
+  width: 48px;
+  height: 48px;
+  background: #f7e8de;
+  color: #ad4b22;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-section-title h2 {
+  font-size: 21px;
+  margin: 0 0 6px;
+}
+
+.profile-section-title p {
+  color: #887b72;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* Fields */
+
+.profile-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 25px;
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.profile-field label {
+  font-size: 13px;
+  font-weight: 650;
+  color: #514239;
+}
+
+.profile-field input,
+.profile-field select,
+.profile-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dfd4cb;
+  background: #fffdfa;
+  border-radius: 8px;
+  padding: 13px 14px;
+  font-size: 14px;
+  color: #33251e;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.profile-field input:focus,
+.profile-field select:focus,
+.profile-field textarea:focus {
+  border-color: #ad4b22;
+  box-shadow: 0 0 0 3px rgba(173, 75, 34, 0.09);
+}
+
+.profile-field input:disabled {
+  background: #f2efec;
+  color: #887b72;
+  cursor: not-allowed;
+}
+
+.profile-field textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.profile-field small {
+  font-size: 11px;
+  color: #95877e;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+/* Address sections */
+
+.profile-subsection {
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #eee6df;
+}
+
+.profile-subsection h3 {
+  font-size: 17px;
+  margin: 0;
+  color: #70412b;
+}
+
+/* Buttons */
+
+.profile-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #eee6df;
+}
+
+.profile-back-button,
+.profile-next-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.profile-back-button {
+  border: 1px solid #d9c9be;
+  background: white;
+  color: #70412b;
+}
+
+.profile-next-button {
+  border: 1px solid #ad4b22;
+  background: #ad4b22;
+  color: white;
+}
+
+.profile-next-button:hover {
+  background: #923d1c;
+}
+
+.profile-back-button:hover {
+  background: #faf2ec;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .candidate-profile-page {
+    padding: 25px 16px;
+  }
+
+  .profile-header h1 {
+    font-size: 25px;
+  }
+
+  .profile-form-card {
+    padding: 22px 16px;
+  }
+
+  .profile-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: auto;
+  }
+
+  .progress-line {
+    min-width: 12px;
+  }
+}
+.profile-message {
+  margin-top: 20px;
+  color: #277342;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.profile-next-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

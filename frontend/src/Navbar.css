@@ -1,0 +1,426 @@
+
+/* =========================================
+   DRISHTEE CAREERS - NAVBAR
+========================================= */
+
+.top-navbar {
+  width: 100%;
+  height: 100px;
+  padding: 0 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+  border-bottom: 1px solid #eadfd6;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   LOGO SECTION
+========================================= */
+
+.top-navbar .navbar-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+
+  width: auto;
+  height: 100%;
+
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+/* Drishtee Circular Logo */
+
+.top-navbar .navbar-logo-image {
+  display: block;
+
+  width: 80px;
+  height: 80px;
+
+  object-fit: contain;
+  object-position: center;
+
+  background: transparent;
+
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo Text */
+
+.top-navbar .navbar-logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.top-navbar .logo-name {
+  display: block;
+
+  color: #ad4c25;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  line-height: 1.1;
+
+  margin: 0;
+}
+
+.top-navbar .logo-subtitle {
+  display: block;
+
+  color: #ad4c25;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  line-height: 1.1;
+
+  margin: 0;
+}
+
+/* =========================================
+   NAVBAR ACTIONS
+========================================= */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.navbar-login-button {
+  min-width: 125px;
+  height: 48px;
+  padding: 0 20px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background: #ffffff;
+  color: #302820;
+
+  border: 1px solid #e5d6ca;
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+}
+
+.navbar-login-button:hover {
+  color: #ad4c25;
+  border-color: #ad4c25;
+  background: #fff8f3;
+}
+
+.navbar-login-button svg {
+  flex-shrink: 0;
+}
+
+/* =========================================
+   REGISTER BUTTON
+========================================= */
+
+.navbar-register-button {
+  min-width: 145px;
+  height: 48px;
+  padding: 0 21px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background: #ad4c25;
+  color: #ffffff;
+
+  border: 1px solid #ad4c25;
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+}
+
+.navbar-register-button:hover {
+  background: #923e1e;
+  border-color: #923e1e;
+  transform: translateY(-1px);
+}
+
+.navbar-register-button svg {
+  flex-shrink: 0;
+}
+
+/* =========================================
+   CANDIDATE PROFILE
+========================================= */
+
+.profile-dropdown {
+  position: relative;
+}
+
+.logged-in-profile {
+  min-height: 52px;
+  padding: 7px 13px;
+
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  background: #ffffff;
+  color: #302820;
+
+  border: 1px solid #eadfd6;
+  border-radius: 10px;
+
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.logged-in-profile:hover {
+  background: #fff8f3;
+  border-color: #ad4c25;
+}
+
+.profile-avatar {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f7e6db;
+  color: #ad4c25;
+
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.profile-name {
+  color: #302820;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.profile-label {
+  color: #84766b;
+  font-size: 11px;
+}
+
+.logged-in-profile > svg {
+  flex-shrink: 0;
+}
+
+/* =========================================
+   PROFILE DROPDOWN MENU
+========================================= */
+
+.profile-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+
+  width: 240px;
+  padding: 10px;
+
+  background: #ffffff;
+  border: 1px solid #eee2d9;
+  border-radius: 12px;
+
+  box-shadow: 0 12px 35px rgba(48, 40, 32, 0.12);
+
+  z-index: 1100;
+}
+
+.profile-menu-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  padding: 12px;
+  margin-bottom: 7px;
+
+  border-bottom: 1px solid #eee2d9;
+}
+
+.profile-menu-details strong {
+  color: #302820;
+  font-size: 14px;
+}
+
+.profile-menu-details span {
+  color: #84766b;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.profile-menu a,
+.profile-menu button {
+  width: 100%;
+  padding: 11px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: transparent;
+  border: none;
+  border-radius: 7px;
+
+  color: #40352c;
+  font-size: 14px;
+  font-family: inherit;
+  text-decoration: none;
+
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.profile-menu a:hover,
+.profile-menu button:hover {
+  color: #ad4c25;
+  background: #fff3ec;
+}
+
+/* =========================================
+   TABLET RESPONSIVENESS
+========================================= */
+
+@media (max-width: 768px) {
+  .top-navbar {
+    height: 82px;
+    padding: 0 22px;
+  }
+
+  .top-navbar .navbar-logo-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .top-navbar .logo-name {
+    font-size: 21px;
+  }
+
+  .navbar-actions {
+    gap: 9px;
+  }
+
+  .navbar-login-button,
+  .navbar-register-button {
+    min-width: auto;
+    height: 42px;
+    padding: 0 13px;
+    gap: 7px;
+    font-size: 13px;
+  }
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 480px) {
+  .top-navbar {
+    height: 70px;
+    padding: 0 12px;
+  }
+
+  .top-navbar .navbar-logo {
+    gap: 7px;
+  }
+
+  .top-navbar .navbar-logo-image {
+    width: 46px;
+    height: 46px;
+  }
+
+  .top-navbar .logo-name {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  .top-navbar .logo-subtitle {
+    font-size: 9px;
+    letter-spacing: 2.5px;
+  }
+
+  .navbar-actions {
+    gap: 6px;
+  }
+
+  .navbar-login-button,
+  .navbar-register-button {
+    min-width: auto;
+    height: 38px;
+    padding: 0 8px;
+    gap: 5px;
+    font-size: 11px;
+    border-radius: 8px;
+  }
+
+  .navbar-login-button svg,
+  .navbar-register-button svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .logged-in-profile {
+    gap: 6px;
+    padding: 5px 7px;
+  }
+
+  .profile-avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .profile-name {
+    font-size: 11px;
+  }
+
+  .profile-label {
+    font-size: 10px;
+  }
+}

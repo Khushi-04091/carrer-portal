@@ -1,0 +1,148 @@
+
+.hr-dashboard {
+  padding: 35px;
+  min-height: 80vh;
+  background: #faf8f5;
+}
+
+.hr-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.hr-dashboard-label {
+  color: #a6532e;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hr-dashboard-header h1 {
+  margin: 10px 0;
+  color: #302820;
+  font-size: 32px;
+}
+
+.hr-dashboard-header p {
+  color: #81766c;
+}
+
+.hr-logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 18px;
+  background: white;
+  border: 1px solid #a6532e;
+  color: #a6532e;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.hr-welcome-card {
+  padding: 30px;
+  background: white;
+  border: 1px solid #eadfd5;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.hr-welcome-card h2 {
+  color: #302820;
+  margin-top: 0;
+}
+
+.hr-welcome-card p {
+  color: #81766c;
+  line-height: 1.7;
+}
+
+.hr-welcome-card span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #a6532e;
+  font-weight: 600;
+}
+
+.hr-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.hr-stat-card {
+  background: white;
+  border: 1px solid #eadfd5;
+  border-radius: 12px;
+  padding: 25px;
+  color: #a6532e;
+}
+
+.hr-stat-card h3 {
+  color: #51463c;
+  font-size: 16px;
+  margin-top: 18px;
+}
+
+.hr-stat-card p {
+  color: #81766c;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .hr-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .hr-dashboard {
+    padding: 20px;
+  }
+
+  .hr-dashboard-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .hr-dashboard-header h1 {
+    font-size: 25px;
+  }
+
+  .hr-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.hr-dashboard-actions {
+  margin-top: 20px;
+}
+
+.hr-filter-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 18px;
+  background-color: #a65332;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.hr-filter-button:hover {
+  background-color: #874128;
+}
+
+.hr-dashboard-error {
+  margin-top: 20px;
+  padding: 14px;
+  background: #fff0ed;
+  color: #b42318;
+  border-radius: 7px;
+}
