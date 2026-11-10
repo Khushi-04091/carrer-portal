@@ -17,7 +17,7 @@ function FeaturedJobs() {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/jobs");
+        const response = await fetch("https://carrer-portal-dpo8.onrender.com/api/jobs");
 
         if (!response.ok) {
           throw new Error("Unable to load job openings.");

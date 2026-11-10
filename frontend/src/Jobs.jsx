@@ -15,7 +15,7 @@ import {
 
 import "./Jobs.css";
 
-const API_URL = "http://localhost:5000/api/jobs";
+const API_URL = "https://carrer-portal-dpo8.onrender.com/api/jobs";
 
 function Jobs() {
   const navigate = useNavigate();

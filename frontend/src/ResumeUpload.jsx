@@ -15,7 +15,7 @@ import {
 
 import "./ResumeUpload.css";
 
-const API_URL = "http://localhost:5000/api/profile";
+const API_URL = "https://carrer-portal-dpo8.onrender.com/api/profile";
 
 function ResumeUpload() {
   const navigate = useNavigate();

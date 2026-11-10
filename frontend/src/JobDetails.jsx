@@ -14,7 +14,7 @@ import {
 
 import "./JobDetails.css";
 
-const API_URL = "http://localhost:5000/api/jobs";
+const API_URL = "https://carrer-portal-dpo8.onrender.com/api/jobs";
 
 function JobDetails() {
   const { jobId } = useParams();

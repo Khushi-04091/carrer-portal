@@ -48,7 +48,7 @@ function HRDashboard() {
         setError("");
 
         const response = await fetch(
-          "http://localhost:5000/api/hr/dashboard/stats",
+          "https://carrer-portal-dpo8.onrender.com/api/hr/dashboard/stats",
           {
             method: "GET",
             headers: {

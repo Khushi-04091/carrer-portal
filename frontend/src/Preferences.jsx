@@ -49,8 +49,8 @@ function Preferences() {
 
         const [entityResponse, preferenceResponse] =
           await Promise.all([
-            fetch("http://localhost:5000/api/entities"),
-            fetch("http://localhost:5000/api/profile/preferences", {
+            fetch("https://carrer-portal-dpo8.onrender.com/api/entities"),
+            fetch("https://carrer-portal-dpo8.onrender.com/api/profile/preferences", {
               headers
             })
           ]);
@@ -120,7 +120,7 @@ function Preferences() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/profile/preferences",
+        "https://carrer-portal-dpo8.onrender.com/api/profile/preferences",
         {
           method: "POST",
           headers: {

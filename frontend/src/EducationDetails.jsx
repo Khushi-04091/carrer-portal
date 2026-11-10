@@ -49,7 +49,7 @@ function EducationDetails() {
         }
 
         const response = await fetch(
-          "http://localhost:5000/api/profile/education",
+          "https://carrer-portal-dpo8.onrender.com/api/profile/education",
           {
             method: "GET",
             headers: {
@@ -177,7 +177,7 @@ function EducationDetails() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/profile/education",
+        "https://carrer-portal-dpo8.onrender.com/api/profile/education",
         {
           method: "POST",
           headers: {
@@ -200,7 +200,7 @@ function EducationDetails() {
 
       // Fetch the latest saved records
       const refreshResponse = await fetch(
-        "http://localhost:5000/api/profile/education",
+        "https://carrer-portal-dpo8.onrender.com/api/profile/education",
         {
           method: "GET",
           headers: {

@@ -43,7 +43,7 @@ function ExperienceDetails() {
         }
 
         const response = await fetch(
-          "http://localhost:5000/api/profile/experience",
+          "https://carrer-portal-dpo8.onrender.com/api/profile/experience",
           {
             method: "GET",
             headers: {
@@ -215,7 +215,7 @@ function ExperienceDetails() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/profile/experience",
+        "https://carrer-portal-dpo8.onrender.com/api/profile/experience",
         {
           method: "POST",
           headers: {

@@ -21,7 +21,7 @@ function HRLogin() {
       setError("");
 
       const response = await fetch(
-        "http://localhost:5000/api/hr/auth/login",
+        "https://carrer-portal-dpo8.onrender.com/api/hr/auth/login",
         {
           method: "POST",
           headers: {

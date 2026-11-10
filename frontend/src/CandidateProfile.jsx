@@ -62,7 +62,7 @@ function CandidateProfile() {
         }
 
         const response = await fetch(
-          "http://localhost:5000/api/profile/personal",
+          "https://carrer-portal-dpo8.onrender.com/api/profile/personal",
           {
             method: "GET",
             headers: {
@@ -177,7 +177,7 @@ function CandidateProfile() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/profile/personal",
+        "https://carrer-portal-dpo8.onrender.com/api/profile/personal",
         {
           method: "POST",
           headers: {

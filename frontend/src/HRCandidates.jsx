@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import "./HRCandidates.css";
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = "https://carrer-portal-dpo8.onrender.com";
 
 function HRCandidates() {
   const navigate = useNavigate();

@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import "./ReviewApplication.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://carrer-portal-dpo8.onrender.com";
 
 function ReviewApplication() {
   const navigate = useNavigate();
